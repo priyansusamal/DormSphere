@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Buddy | DormSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>Budget Buddy</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Private Expense Tracker</p>
+  <h2>Survive hostel life without going broke.</h2>
+  <p>Track daily spending, set a monthly budget, and get smart warnings before your money disappears.</p>
+</section>
+
+<section class="budget-layout">
+  <div class="budget-card">
+    <h3>Add Expense</h3>
+
+    <input type="text" id="expenseName" placeholder="Expense name e.g. Snacks" />
+    <input type="number" id="expenseAmount" placeholder="Amount ₹" />
+
+    <select id="expenseCategory">
+      <option value="Food">Food</option>
+      <option value="Travel">Travel</option>
+      <option value="Study">Study</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <button class="main-btn" onclick="addExpense()">Add Expense</button>
+  </div>
+
+  <div class="budget-card summary-card">
+    <h3>This Month</h3>
+    <h2>₹<span id="totalSpent">0</span></h2>
+    <p id="budgetMood">You’re doing great. Keep tracking.</p>
+  </div>
+</section>
+
+<section class="expense-list-section">
+  <h3>Recent Expenses</h3>
+  <div id="expenseList"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

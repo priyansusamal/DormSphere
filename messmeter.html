@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MessMeter | DormSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>MessMeter</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Community Food Ratings</p>
+  <h2>Know the mess mood before you go.</h2>
+  <p>Rate meals, share quick reviews, and help hostel students decide whether today’s food is worth it.</p>
+</section>
+
+<section class="mess-layout">
+  <div class="mess-card">
+    <h3>Rate Today’s Meal</h3>
+
+    <select id="mealType">
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Snacks</option>
+      <option>Dinner</option>
+    </select>
+
+    <input type="text" id="mealName" placeholder="Meal name e.g. Paneer rice" />
+
+    <select id="mealRating">
+      <option value="5">★★★★★ Excellent</option>
+      <option value="4">★★★★ Good</option>
+      <option value="3">★★★ Average</option>
+      <option value="2">★★ Bad</option>
+      <option value="1">★ Terrible</option>
+    </select>
+
+    <textarea id="mealReview" placeholder="Quick review..."></textarea>
+
+    <button class="main-btn" onclick="addMealReview()">Submit Rating</button>
+  </div>
+
+  <div class="mess-card mess-score-card">
+    <h3>Today’s Mess Mood</h3>
+    <div class="score-circle">
+      <span id="averageRating">0.0</span>
+      <small>/ 5</small>
+    </div>
+    <p id="messMoodText">No ratings yet. Be the first one.</p>
+  </div>
+</section>
+
+<section class="review-section">
+  <h3>Student Reviews</h3>
+  <div id="reviewList"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

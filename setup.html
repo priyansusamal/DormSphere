@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DormSphere | Setup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="bg-orb orb-three"></div>
+
+  <main class="setup-container">
+    <section class="login-card setup-card">
+      <p class="mini-label">Personalize your sphere</p>
+      <h2>Set up your hostel space</h2>
+      <p>Choose your college and hostel so DormSphere can organize your dashboard better.</p>
+
+      <form id="setupForm">
+        <label>College Name</label>
+        <input type="text" id="collegeName" placeholder="e.g. SRM KTR" required />
+
+        <label>Hostel Name</label>
+        <input type="text" id="hostelName" placeholder="e.g. M Block / Girls Hostel" required />
+
+        <label>Room Number</label>
+        <input type="text" id="roomNumber" placeholder="e.g. 412" required />
+
+        <button type="submit" class="main-btn">Continue to Dashboard</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

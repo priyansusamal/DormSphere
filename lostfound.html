@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost & Found | DormSphere</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>Lost & Found</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Community Recovery Hub</p>
+  <h2>Help students find what matters.</h2>
+  <p>
+    Lost your charger? Found someone's ID card?
+    Post it here and help the community.
+  </p>
+</section>
+
+<section class="lost-layout">
+
+<div class="lost-card">
+
+<h3>Report an Item</h3>
+
+<input
+type="text"
+id="itemName"
+placeholder="Item name"
+/>
+
+<input
+type="text"
+id="itemLocation"
+placeholder="Last seen location"
+/>
+
+<select id="itemStatus">
+<option>Lost</option>
+<option>Found</option>
+</select>
+
+<textarea
+id="itemDescription"
+placeholder="Describe the item..."
+></textarea>
+
+<button
+class="main-btn"
+onclick="addLostItem()"
+>
+Submit
+</button>
+
+</div>
+
+<div class="lost-card stats-card">
+
+<h3>Community Impact</h3>
+
+<div class="lost-stat">
+<span id="totalItems">0</span>
+<p>Total Reports</p>
+</div>
+
+<div class="lost-stat">
+<span id="lostCount">0</span>
+<p>Lost Items</p>
+</div>
+
+<div class="lost-stat">
+<span id="foundCount">0</span>
+<p>Found Items</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="items-section">
+
+<h3>Recent Reports</h3>
+
+<div id="itemsContainer"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

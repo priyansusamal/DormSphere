@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notice Board | DormSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>Notice Board</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Hostel Announcements</p>
+  <h2>All updates. No WhatsApp chaos.</h2>
+  <p>Post and view hostel notices, maintenance updates, events, mess alerts, and important announcements in one place.</p>
+</section>
+
+<section class="notice-layout">
+  <div class="notice-card">
+    <h3>Create Notice</h3>
+
+    <input type="text" id="noticeTitle" placeholder="Notice title" />
+
+    <select id="noticeCategory">
+      <option>General</option>
+      <option>Mess Update</option>
+      <option>Maintenance</option>
+      <option>Event</option>
+      <option>Urgent</option>
+    </select>
+
+    <textarea id="noticeText" placeholder="Write the announcement..."></textarea>
+
+    <button class="main-btn" onclick="addNotice()">Post Notice</button>
+  </div>
+
+  <div class="notice-card notice-stat-card">
+    <h3>Live Board</h3>
+    <div class="notice-big-number"><span id="noticeCount">0</span></div>
+    <p>active notices for your hostel community.</p>
+  </div>
+</section>
+
+<section class="notice-section">
+  <h3>Latest Notices</h3>
+  <div id="noticeContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

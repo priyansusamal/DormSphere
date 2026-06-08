@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DormSphere | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-body">
+
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+
+  <header class="home-nav">
+    <div class="nav-logo">DormSphere</div>
+
+    <div class="nav-user">
+      <div class="notification-btn">
+        🔔
+        <span>3</span>
+      </div>
+
+      <span id="userEmail">Student</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="home-wrapper">
+<section class="home-hero">
+  <p class="mini-label">Welcome to your student living sphere</p>
+
+  <h1 id="greetingText">Welcome 👋</h1>
+
+  <div class="location-pill">
+    📍 <span id="collegeDisplay">College</span> •
+    <span id="hostelDisplay">Hostel</span> •
+    Room <span id="roomDisplay">101</span>
+  </div>
+
+  <p id="homeSummary">
+    Your hostel dashboard is ready.
+  </p>
+</section>
+
+    <section class="snapshot-section">
+      <div class="snapshot-card">
+        <h3>🍽 Mess Mood</h3>
+        <h1><span id="homeMessRating">0.0</span> ★</h1>
+        <p id="homeMessText">Waiting for student reviews.</p>
+      </div>
+
+      <div class="snapshot-card">
+        <h3>📚 Active Study Circles</h3>
+        <h1 id="homeStudyCount">0</h1>
+        <p>study circles active inside your dorm.</p>
+      </div>
+
+      <div class="snapshot-card">
+        <h3>🔍 Lost & Found</h3>
+        <h1 id="homeLostCount">0</h1>
+        <p>items reported by students.</p>
+      </div>
+
+      <div class="snapshot-card">
+        <h3>🛒 Marketplace</h3>
+        <h1 id="homeMarketCount">0</h1>
+        <p>active student listings.</p>
+      </div>
+    </section>
+
+    <input
+      type="text"
+      id="featureSearch"
+      placeholder="Search features..."
+      class="feature-search"
+    />
+
+    <section class="feature-grid-home">
+
+      <a href="dormai.html" class="module-card large-card">
+        <span class="icon">🤖</span>
+        <h2>DormAI</h2>
+        <p>Your AI hostel companion for food, budget, study and survival tips.</p>
+      </a>
+
+      <a href="messmeter.html" class="module-card">
+        <span class="icon">🍽️</span>
+        <h2>MessMeter</h2>
+        <p>Rate food, check reviews and know today’s mess mood.</p>
+      </a>
+
+      <a href="budget.html" class="module-card private-card">
+        <span class="icon">💸</span>
+        <h2>Budget Buddy</h2>
+        <p>Track private expenses and survive till month-end.</p>
+      </a>
+
+      <a href="lostfound.html" class="module-card">
+        <span class="icon">🔍</span>
+        <h2>Lost & Found</h2>
+        <p>Post, search and recover lost hostel items faster.</p>
+      </a>
+
+      <a href="studycircles.html" class="module-card">
+        <span class="icon">📚</span>
+        <h2>Study Circles</h2>
+        <p>Create and join subject-wise study groups.</p>
+      </a>
+
+      <a href="marketplace.html" class="module-card">
+        <span class="icon">🛒</span>
+        <h2>Marketplace</h2>
+        <p>Buy and sell books, lab coats, calculators and hostel essentials.</p>
+      </a>
+
+      <a href="noticeboard.html" class="module-card">
+        <span class="icon">📢</span>
+        <h2>Notice Board</h2>
+        <p>Hostel notices, events, maintenance updates and alerts.</p>
+      </a>
+
+      <a href="laundry.html" class="module-card private-card">
+        <span class="icon">🧺</span>
+        <h2>Laundry Tracker</h2>
+        <p>Track laundry status, pickup dates and reminders.</p>
+      </a>
+
+      <a href="roommate.html" class="module-card private-card">
+        <span class="icon">🛏️</span>
+        <h2>Roommate Match</h2>
+        <p>Find compatible roommates based on lifestyle habits.</p>
+      </a>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

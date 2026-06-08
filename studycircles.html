@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Circles | DormSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>Study Circles</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Collaborative Learning</p>
+  <h2>Find your people before exams hit.</h2>
+  <p>Create subject-wise study groups, join active circles, and turn hostel panic into group productivity.</p>
+</section>
+
+<section class="study-layout">
+  <div class="study-card">
+    <h3>Create a Circle</h3>
+
+    <input type="text" id="circleName" placeholder="Circle name e.g. DBMS Night Squad" />
+    <input type="text" id="circleSubject" placeholder="Subject e.g. DBMS" />
+    <input type="text" id="circleTime" placeholder="Time e.g. 8 PM, Block B common room" />
+
+    <select id="circleMode">
+      <option>Exam Prep</option>
+      <option>Assignment Help</option>
+      <option>Hackathon Team</option>
+      <option>Project Work</option>
+      <option>General Study</option>
+    </select>
+
+    <button class="main-btn" onclick="addStudyCircle()">Create Circle</button>
+  </div>
+
+  <div class="study-card spotlight-card">
+    <h3>Circle Spotlight</h3>
+    <p class="spotlight-number"><span id="circleCount">0</span></p>
+    <p>active study circles inside your dorm community.</p>
+  </div>
+</section>
+
+<section class="circle-section">
+  <h3>Active Circles</h3>
+  <div id="circleContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roommate Match | DormSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>Roommate Match</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Compatibility Finder</p>
+  <h2>Find a roommate who actually fits your lifestyle.</h2>
+  <p>Answer a few hostel-life questions and get a compatibility score based on sleep, study, cleanliness and social habits.</p>
+</section>
+
+<section class="roommate-layout">
+  <div class="roommate-card">
+    <h3>Your Preferences</h3>
+
+    <select id="sleepTime">
+      <option value="early">Sleeps Early</option>
+      <option value="late">Sleeps Late</option>
+      <option value="flexible">Flexible Sleep Schedule</option>
+    </select>
+
+    <select id="cleanliness">
+      <option value="very-clean">Very Clean</option>
+      <option value="medium">Moderately Clean</option>
+      <option value="chill">Chill / Not Too Strict</option>
+    </select>
+
+    <select id="studyStyle">
+      <option value="quiet">Needs Quiet Study Space</option>
+      <option value="music">Studies With Music</option>
+      <option value="group">Likes Group Study</option>
+    </select>
+
+    <select id="socialLevel">
+      <option value="introvert">Introvert</option>
+      <option value="balanced">Balanced</option>
+      <option value="extrovert">Extrovert</option>
+    </select>
+
+    <button class="main-btn" onclick="findRoommateMatch()">Find Match</button>
+  </div>
+
+  <div class="roommate-card match-result-card">
+    <h3>Best Match</h3>
+
+    <div class="match-circle">
+      <span id="matchScore">--</span>
+      <small>%</small>
+    </div>
+
+    <h4 id="matchName">Waiting for preferences</h4>
+    <p id="matchReason">Choose your lifestyle and DormSphere will suggest a compatible roommate profile.</p>
+  </div>
+</section>
+
+<section class="roommate-section">
+  <h3>Suggested Roommate Profiles</h3>
+
+  <div class="profile-grid">
+    <div class="profile-card">
+      <h4>Ananya</h4>
+      <p>🌙 Sleeps late • 📚 Quiet study • ✨ Very clean</p>
+    </div>
+
+    <div class="profile-card">
+      <h4>Riya</h4>
+      <p>🌅 Sleeps early • 🎧 Studies with music • 🌿 Balanced</p>
+    </div>
+
+    <div class="profile-card">
+      <h4>Meera</h4>
+      <p>🕰 Flexible sleep • 👥 Group study • 🧺 Moderately clean</p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

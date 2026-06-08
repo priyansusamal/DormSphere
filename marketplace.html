@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace | DormSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>Marketplace</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Hostel Buy & Sell</p>
+  <h2>Pass on what you don’t need anymore.</h2>
+  <p>Buy and sell books, calculators, lab coats, lamps, buckets, and other student essentials inside your hostel community.</p>
+</section>
+
+<section class="market-layout">
+  <div class="market-card">
+    <h3>List an Item</h3>
+
+    <input type="text" id="productName" placeholder="Item name e.g. Engineering Calculator" />
+    <input type="number" id="productPrice" placeholder="Price ₹" />
+    <input type="text" id="productLocation" placeholder="Pickup location e.g. Block C" />
+
+    <select id="productCategory">
+      <option>Books</option>
+      <option>Electronics</option>
+      <option>Room Essentials</option>
+      <option>Stationery</option>
+      <option>Clothing</option>
+      <option>Other</option>
+    </select>
+
+    <textarea id="productDescription" placeholder="Condition, details, contact info..."></textarea>
+
+    <button class="main-btn" onclick="addProduct()">Add Listing</button>
+  </div>
+
+  <div class="market-card market-stat-card">
+    <h3>Marketplace Pulse</h3>
+    <div class="market-big-number"><span id="productCount">0</span></div>
+    <p>active listings by students.</p>
+  </div>
+</section>
+
+<section class="listing-section">
+  <h3>Available Listings</h3>
+  <div id="productContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

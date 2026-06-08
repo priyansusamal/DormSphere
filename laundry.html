@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Tracker | DormSphere</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="feature-page">
+
+<header class="feature-navbar">
+  <a href="home.html" class="back-btn">← Back</a>
+  <h1>Laundry Tracker</h1>
+</header>
+
+<section class="feature-hero">
+  <p class="mini-label">Laundry Management</p>
+  <h2>Never lose track of your clothes again.</h2>
+  <p>
+    Keep track of submitted laundry, pickup dates,
+    quantities and status.
+  </p>
+</section>
+
+<section class="laundry-layout">
+
+<div class="laundry-card">
+
+<h3>Add Laundry Batch</h3>
+
+<input
+type="text"
+id="laundryName"
+placeholder="Batch name"
+/>
+
+<input
+type="number"
+id="laundryCount"
+placeholder="Number of clothes"
+/>
+
+<input
+type="date"
+id="laundryDate"
+/>
+
+<select id="laundryStatus">
+<option>Submitted</option>
+<option>Processing</option>
+<option>Ready for Pickup</option>
+<option>Collected</option>
+</select>
+
+<button
+class="main-btn"
+onclick="addLaundry()"
+>
+Add Batch
+</button>
+
+</div>
+
+<div class="laundry-card laundry-stat-card">
+
+<h3>Total Batches</h3>
+
+<div class="laundry-big-number">
+<span id="laundryCountDisplay">0</span>
+</div>
+
+<p>laundry entries tracked.</p>
+
+</div>
+
+</section>
+
+<section class="laundry-section">
+
+<h3>My Laundry</h3>
+
+<div id="laundryContainer"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
