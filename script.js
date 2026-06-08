@@ -10,14 +10,8 @@ if (loginForm) {
     if (email) {
       localStorage.setItem("dormsphereUser", email);
 
-      const college = localStorage.getItem("dormsphereCollege");
-      const hostel = localStorage.getItem("dormsphereHostel");
-
-      if (college && hostel) {
-        window.location.href = "home.html";
-      } else {
-        window.location.href = "setup.html";
-      }
+      // Always show setup page
+      window.location.href = "setup.html";
     }
   });
 }
